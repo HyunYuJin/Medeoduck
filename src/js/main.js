@@ -56,6 +56,12 @@ var mouse = {
     y: undefined
 }
 
+// Add Image
+const imgElem = document.querySelector('.medeoduck');
+imgElem.addEventListener('load', function () {
+    context.drawImage(imgElem, canvas.width, canvas.height); // drawImage('이미지객체', x좌표, y좌표)
+});
+
 window.addEventListener('mousemove', function (event) {
     mouse.x = event.x;
     mouse.y = event.y;
