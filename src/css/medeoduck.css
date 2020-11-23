@@ -15,6 +15,7 @@ h1 {
 }
 
 h2 {
+    font-family: 'Cabin Sketch', cursive;
     margin: 0;
 }
 
@@ -119,23 +120,45 @@ li a:focus {
 }
 
 /* poster */
-.card-wrap {
+@keyframes poster-ani {
+    0% {
+        /* from */
+        transform: rotateY(-20deg);
+    }
+
+    100% {
+        /* to */
+        transform: rotateY(20deg);
+    }
+}
+
+.wrap {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 85vh;
-    perspective: 100px;
+    /* width: 100vw; */
+    height: 60vh;
+}
+
+.card-wrap {
+    display: flex;
+    width: 30vw;
+    /* height: 60vh; */
+    perspective: 1000px;
+    /* 3D로 적용한다! */
 }
 
 .poster {
     position: relative;
-    width: 400px;
-    height: 450px;
-    border: 2px solid #000;
+    width: 300px;
+    height: 350px;
+    border: 2px solid rgba(205, 138, 204, 0.6);
     border-radius: 10px;
-    background: yellow;
-    transform: rotateY(45deg);
+    background: rgba(205, 138, 204, 0.2);
+    animation: poster-ani 1.6s infinite linear alternate;
+    /* alternate: 0 -> 100 으로, 100 -> 0 으로 번갈아가며 반복 */
+    transform-style: preserve-3d;
 }
 
 .poster-title {
@@ -144,11 +167,14 @@ li a:focus {
     font-size: 2rem;
     font-weight: normal;
     text-align: center;
+    transform: translateZ(80px);
+    /* 깊이 */
 }
 
 .medeoduck {
     position: absolute;
-    width: 80%;
+    /* width: 80%; */
+    transform: translateZ(60px);
 }
 
 .me-img {
