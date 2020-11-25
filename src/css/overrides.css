@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Texturina:wght@300&display=swap');
+
+html {
+    font-size: 13px;
+    letter-spacing: -0.2px;
+    line-height: 18px !important;
+}
+
+body {
+    color: black;
+}
+
+section {
+    padding-bottom: 0px !important;
+}
+
+footer {
+    font-size: 11px;
+}
+
+.page {
+    padding-top: 32px;
+    max-width: 1320px;
+    margin: auto;
+}
+
+.is-display {
+    font-family: 'Inconsolata', monospace;
+    line-height: 32px;
+}
+
+.is-mono {
+    font-family: 'Texturina', serif;
+}
+
+::selection {
+    color: white;
+    background-color: black;
+}
+
+hr {
+    margin: 16px 0px 16px;
+    height: 1px;
+    background-color: black;
+}
+
+hr.thick {
+    height: 2px;
+}
+
+hr.extra-thick {
+    height: 4px;
+    margin: -24px 0px 20px;
+}
+
+hr.double {
+    background-color: transparent;
+    height: 9px;
+    border-top: 2px solid black;
+    border-bottom: 1px solid black;
+}
