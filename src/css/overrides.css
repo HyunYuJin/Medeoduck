@@ -177,6 +177,10 @@ img.loaded {
     transition-timing-function: ease;
 }
 
+img.overSize {
+    object-fit: cover;
+}
+
 article img {
     filter: grayscale(100%);
     transition-property: filter, opacity;
@@ -260,7 +264,7 @@ article {
 }
 
 /* article 요소의 자식인 .external-link를 선택 */
-article > .external-link {
+article>.external-link {
     margin-top: 8px;
 }
 
@@ -273,4 +277,10 @@ article > .external-link {
     height: 24px;
     padding: 0;
     margin-right: 8px;
+}
+
+#static {
+    height: 56px;
+    width: 100%;
+    background-color: black;
 }
