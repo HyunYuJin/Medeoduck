@@ -166,7 +166,7 @@ hr.double {
 img.lazy-load {
     opacity: 0;
     transition-property: filter, opacity;
-    transition-delay: 0.33s;
+    transition-duration: 0.33s;
     transition-timing-function: ease;
 }
 
