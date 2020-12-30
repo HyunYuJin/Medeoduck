@@ -9,6 +9,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="/src/images/medeoduck01.ico">
     <link rel="stylesheet" href="./src/css/bulma.css">
     <link rel="stylesheet" href="./src/css/overrides.css">
+    <link rel="stylesheet" href="./src/css/medeoduck.css">
     <meta name="description"
         content="Hello, world! I'm a web developer based in Pangyo. I'm in charge of front-end development, and I'm very interested in interactive web development.">
     <meta name="author" content="Hyeon YuJin">
@@ -22,10 +23,13 @@
 </head>
 
 <body>
+  <div class="progress-bar-con">
+    <div class="progress-bar"></div>
+  </div>
     <main class="page is-mono">
         <section id="header" class="section">
-            <header class="has-text-centered">
-                <div class="columns headline is-centered is-vcentered">
+            <header class="header has-text-centered">
+                <div class="inner-header columns headline is-centered is-vcentered">
                     <div class="column undivided">
                         <div class="columns no-margin is-vcentered">
                             <div class="column is-narrow undivided has-text-left-tablet single-line quote">
@@ -35,7 +39,7 @@
                         </div>
                     </div>
                     <div class="columns undivided is-narrow is-centered main-title">
-                        <h1 class="is-display">Hyeon YuJin</h1>
+                        <h1 class="is-display main-logo">Hyeon YuJin</h1>
                     </div>
                     <div class="column undivided">
                         <div class="columns no-margin is-vcentered">
@@ -51,7 +55,7 @@
                 <span class="handle">@h_yudang</span>
                 <hr class="extra-thick">
             </header>
-            <article id="profile">
+            <article id="profile" class="profile-con">
                 <div class="columns is-multiline no-margin">
                     <div class="column no-margin undivided is-one-quarter">
                         <figure class="image is-square">
@@ -469,8 +473,8 @@
             </footer>
         </section>
     </main>
-    <canvas id="static"></canvas>
-
+    <!-- <canvas id="static"></canvas> -->
+    <script src="./src/js/main.js"></script>
     <script src="./src/js/static.js"></script>
     <script src="./src/js/quote.js"></script>
 </body>

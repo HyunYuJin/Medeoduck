@@ -1,3 +1,31 @@
+// progress-bar
+(function() {
+  const barElem = document.querySelector('.progress-bar');
+  const logoElem = document.querySelector('.main-logo');
+  let maxScrollValue;
+  let mousePos = { x: 0, y: 0 };
+
+  function resizeHandler() {
+    maxScrollValue = document.body.offsetHeight - window.innerHeight;
+  }
+
+  window.addEventListener('scroll', function() {
+    let scrollPer = pageYOffset / maxScrollValue;
+    barElem.style.width = scrollPer * 100 + '%';
+  });
+
+  window.addEventListener('resize', resizeHandler);
+
+  window.addEventListener('mousemove', function(e) {
+    mousePos.x = -1 + (e.clientX / window.innerWidth) * 2;
+    mousePos.y = 1 - (e.clientY / window.innerHeight) * 2;
+    logoElem.style.transform = 'rotateX(' + (mousePos.y * 30) + 'deg) rotateY(' + (mousePos.x * 30) + 'deg)';
+  })
+
+  resizeHandler();
+})();
+
+
 // Menu
 var theToggle = document.getElementById('toggle');
 

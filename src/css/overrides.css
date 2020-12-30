@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Source+Code+Pro&display=swap');
 
 html {
-    font-size: 13px;
-    letter-spacing: -0.2px;
-    line-height: 18px !important;
+  height: 100%;
+  font-size: 13px;
+  letter-spacing: -0.2px;
+  line-height: 18px !important;
 }
 
 body {
+    min-height: 100%;
     color: black;
 }
 
@@ -19,7 +21,7 @@ footer {
 }
 
 .page {
-    padding-top: 32px;
+    /* padding-top: 32px; */
     max-width: 1320px;
     margin: auto;
 }
@@ -238,6 +240,7 @@ a::selection {
     font-weight: normal !important;
     line-height: 32px;
     margin: 0 !important;
+    perspective: 1000px;
 }
 
 .single-line {
