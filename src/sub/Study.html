@@ -38,7 +38,7 @@
                     <div class="bottom flex">
                         <div class="menu"></div>
                         <div class="menu">
-                            <a href="#">📷 미더덕 인스타</a>
+                            <a href="https://www.instagram.com/h_yudang/">📷 미더덕 인스타</a>
                         </div>
                     </div>
                 </div>
@@ -46,8 +46,13 @@
                 <div class="site-intro-container">
                     <div class="intro-wrap">
                         <div class="site-intro-title">
-                            <h1 class="site-title">👩🏻‍💻 미더덕의 공부장 📠</h1>
+                            <h1 class="site-title">미더덕의 공부장 👩🏻‍💻</h1>
                             <h3>미치도록 날고싶은 오리 유진이가 하루하루 공부한 내용을 기록하고 저장해나가는 공간입니다.</h3>
+                            <div class="go-github">
+                              <button type="button" class="btn">
+                                <a href="https://github.com/HyunYuJin">Github</a>
+                              </button>
+                            </div>
                         </div>
                         <div class="site-intro-img">
                             <div class="img-wrap">
@@ -61,16 +66,98 @@
 
         <section id="article">
             <article class="grid-container">
-                
+              <div class="form-wrap">
+                <form action="/filter" method="post" id="filter-form">
+                  <div class="flex-container filter-container">
+                    <!-- control category -->
+                    <div class="control-group">
+                      <!-- hidden -->
+                      <select id="select-category" class="select-input-wrap" name="category" style="display: none;"></select>
+                      <div class="select-control">
+                        <div class="select-input">
+                          <input type="text" autocomplete="off" id="select-category-selectized" placeholder="Category">
+                        </div>
+                        <div class="select-dropdown" style="display: none;">
+                          <div class="select-dropdown-content">
+                            <div class="option" data-selectable data-value="1">업무</div>
+                            <div class="option" data-selectable data-value="2">프로젝트</div>
+                            <div class="option" data-selectable data-value="3">개인공부</div>
+                            <div class="option" data-selectable data-value="4">독서</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- control skill -->
+                    <div class="control-group">
+                      <!-- hidden -->
+                      <select id="select-skill" class="select-input-wrap" name="skill" style="display: none;"></select>
+                      <div class="select-control">
+                        <div class="select-input">
+                          <input type="text" autocomplete="off" id="select-skill-selectized" placeholder="Skill">
+                        </div>
+                        <div class="select-dropdown" style="display: none;">
+                          <div class="select-dropdown-content">
+                            <div class="option" data-selectable data-value="1">Vanilla JS</div>
+                            <div class="option" data-selectable data-value="2">Vue.js</div>
+                            <div class="option" data-selectable data-value="3">NodeJS</div>
+                            <div class="option" data-selectable data-value="4">MySQL</div>
+                            <div class="option" data-selectable data-value="5">NativeScript-vue</div>
+                            <div class="option" data-selectable data-value="6">Firebase</div>
+                            <div class="option" data-selectable data-value="7">REST API</div>
+                            <div class="option" data-selectable data-value="8">Leaflet API</div>
+                            <div class="option" data-selectable data-value="9">Import</div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="flex-container card-container">
+                <div class="card-wrap">
+                  <div class="tag-wrap">
+                    <div class="tag tag-cate" data-tag="3-study">개인공부</div>
+                  </div>
+                  <div class="card-content">
+                    <div class="title">
+                      <h2>인터렉티브 웹개발</h2>
+                    </div>
+                    <div class="explanation">인터렉티브 웹개발의 가장 기초를 다지기 위한 공부를 한 내용</div>
+                  </div>
+                  <div class="tag-wrap">
+                    <div class="tag tag-outline" data-skill="1-vanilla">Vanilla JS</div>
+                  </div>
+                </div>
+
+                <div class="card-wrap">
+                  <div class="tag-wrap">
+                    <div class="tag tag-cate" data-tag="1-work">업무</div>
+                  </div>
+                  <div class="card-content">
+                    <div class="title">
+                      <h2>타시오 자율주행셔틀</h2>
+                    </div>
+                    <div class="explanation">타시오오오</div>
+                  </div>
+                  <div class="tag-wrap">
+                    <div class="tag tag-outline" data-skill="2-vue">Vue.js</div>
+                    <div class="tag tag-outline" data-skill="6-firebase">Firebase</div>
+                  </div>
+                </div>
+              </div>
             </article>
         </section>
-
-        <section id="footer">
-            <footer class="page-footer">
-                
-            </footer>
-        </section>
     </main>
+    <section id="footer">
+        <footer class="flex-container page-footer">
+          <div class="footer-content"></div>
+          <div class="footer-link">
+            <a href="https://www.instagram.com/h_yudang/">📷 미더덕 인스타</a>
+          </div>
+        </footer>
+    </section>
 
     <script src="../js/main.js"></script>
 </body>

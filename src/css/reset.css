@@ -60,3 +60,16 @@ img.loaded {
 img.overSize {
 	object-fit: cover;
 }
+
+.select-input > input {
+  display: inline-block !important;
+  padding: 0 !important;
+  max-width: 100% !important;
+  height: none !important;
+  margin: 0 2px 0 0 !important;
+  text-indent: 0 !important;
+  border: 0 none !important;
+  background: none !important;
+  line-height: inherit !important;
+  box-shadow: none !important;
+}
