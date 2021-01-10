@@ -1,6 +1,11 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
 html {
-    font-size: 87.5%; /* 14px */
-    font-family: Roboto, 'Noto Sans KR', sans-serif;
+    /* font-size: 87.5%; */ /* 14px */
+    font-size: 15px;
+    font-family: 'Poor Story', cursive;
+    /* font-family: Roboto, 'Noto Sans KR', sans-serif; */
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility !important;
 }
@@ -70,6 +75,8 @@ img {
 
 .intro-wrap {
     height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 /* article */
@@ -127,10 +134,46 @@ img {
 .card-wrap {
   display: flex;
   flex-direction: column;
-  flex: 0 0 50%;
-  max-width: 50%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  min-height: 300px;
   padding: 2.2rem;
   border-right: 1px solid #000000;
   border-bottom: 1px solid #000000;
   cursor: pointer;
+}
+
+/* footer */
+#footer {
+  display: block;
+  width: 100%;
+}
+
+.page-footer {
+  padding: 0 15px;
+}
+
+.page-footer > div {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 2rem calc(2rem - 15px);
+}
+
+.footer-link {
+  text-align: right;
+}
+
+/* media query */
+@media (min-width: 760px) {
+  .card-wrap {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 990px) {
+  .card-wrap {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
 }

@@ -19,11 +19,13 @@
 </head>
 
 <body>
+  <!-- progress bar -->
   <div class="progress-bar-con">
     <div class="progress-bar"></div>
   </div>
 
     <main class="page">
+      <!-- header -->
         <section id="header">
             <header class="page-header">
                 <div class="site-menu">
@@ -32,7 +34,7 @@
                             <a href="../../index.html">미더덕 메인 🐥</a>
                         </div>
                         <div class="menu">
-                            <a href="./Study.html">📔 미더덕 공부</a>
+                            <a href="./Study.html">📔 미더덕 공부장</a>
                         </div>
                     </div>
                     <div class="bottom flex">
@@ -47,10 +49,10 @@
                     <div class="intro-wrap">
                         <div class="site-intro-title">
                             <h1 class="site-title">미더덕의 공부장 👩🏻‍💻</h1>
-                            <h3>미치도록 날고싶은 오리 유진이가 하루하루 공부한 내용을 기록하고 저장해나가는 공간입니다.</h3>
+                            <h3>'미'치도록 '더' 날고싶은 '오리' 유진이가 하루하루 공부한 내용을 기록하고 저장해나가는 공간입니다.</h3>
                             <div class="go-github">
                               <button type="button" class="btn">
-                                <a href="https://github.com/HyunYuJin">Github</a>
+                                <a href="https://github.com/HyunYuJin" target="_blank">Github</a>
                               </button>
                             </div>
                         </div>
@@ -64,8 +66,10 @@
             </header>
         </section>
 
+        <!-- article -->
         <section id="article">
             <article class="grid-container">
+              <!-- form category -->
               <div class="form-wrap">
                 <form action="/filter" method="post" id="filter-form">
                   <div class="flex-container filter-container">
@@ -74,12 +78,12 @@
                       <!-- hidden -->
                       <select id="select-category" class="select-input-wrap" name="category" style="display: none;"></select>
                       <div class="select-control">
-                        <div class="select-input">
+                        <div class="select-input cate-input">
                           <input type="text" autocomplete="off" id="select-category-selectized" placeholder="Category">
                         </div>
-                        <div class="select-dropdown" style="display: none;">
+                        <div class="select-dropdown cate-dropdown">
                           <div class="select-dropdown-content">
-                            <div class="option" data-selectable data-value="1">업무</div>
+                            <div class="option active" data-selectable data-value="1">업무</div>
                             <div class="option" data-selectable data-value="2">프로젝트</div>
                             <div class="option" data-selectable data-value="3">개인공부</div>
                             <div class="option" data-selectable data-value="4">독서</div>
@@ -93,12 +97,12 @@
                       <!-- hidden -->
                       <select id="select-skill" class="select-input-wrap" name="skill" style="display: none;"></select>
                       <div class="select-control">
-                        <div class="select-input">
+                        <div class="select-input skill-input">
                           <input type="text" autocomplete="off" id="select-skill-selectized" placeholder="Skill">
                         </div>
-                        <div class="select-dropdown" style="display: none;">
+                        <div class="select-dropdown skill-dropdown">
                           <div class="select-dropdown-content">
-                            <div class="option" data-selectable data-value="1">Vanilla JS</div>
+                            <div class="option active" data-selectable data-value="1">Vanilla JS</div>
                             <div class="option" data-selectable data-value="2">Vue.js</div>
                             <div class="option" data-selectable data-value="3">NodeJS</div>
                             <div class="option" data-selectable data-value="4">MySQL</div>
@@ -107,6 +111,8 @@
                             <div class="option" data-selectable data-value="7">REST API</div>
                             <div class="option" data-selectable data-value="8">Leaflet API</div>
                             <div class="option" data-selectable data-value="9">Import</div>
+                            <div class="option" data-selectable data-value="10">Java</div>
+                            <div class="option" data-selectable data-value="11">Servlet & JSP</div>
                           </div>
                         </div>
                     </div>
@@ -115,6 +121,7 @@
                 </form>
               </div>
 
+              <!-- card container -->
               <div class="flex-container card-container">
                 <div class="card-wrap">
                   <div class="tag-wrap">
@@ -122,9 +129,9 @@
                   </div>
                   <div class="card-content">
                     <div class="title">
-                      <h2>인터렉티브 웹개발</h2>
+                      <h2>알고리즘</h2>
                     </div>
-                    <div class="explanation">인터렉티브 웹개발의 가장 기초를 다지기 위한 공부를 한 내용</div>
+                    <div class="explanation">평소 어려워하는 알고리즘 공부를 Node.js 및 Javascript를 이용해서 기초부터 탄탄하게 다지며 코드를 저장하는 공간입니다.</div>
                   </div>
                   <div class="tag-wrap">
                     <div class="tag tag-outline" data-skill="1-vanilla">Vanilla JS</div>
@@ -137,28 +144,120 @@
                   </div>
                   <div class="card-content">
                     <div class="title">
-                      <h2>타시오 자율주행셔틀</h2>
+                      <h2>자율주행 무인우체국</h2>
                     </div>
-                    <div class="explanation">타시오오오</div>
+                    <div class="explanation">(주)스프링클라우드에서 일하며 개발한 웹앱입니다. 자율주행 차량이 무인우체국이 되어 사용자가 원하는 시간대와 장소를 선택하면 해당 위치로 상품을 배달해주는 서비스입니다.</div>
                   </div>
                   <div class="tag-wrap">
                     <div class="tag tag-outline" data-skill="2-vue">Vue.js</div>
                     <div class="tag tag-outline" data-skill="6-firebase">Firebase</div>
+                    <div class="tag tag-outline" data-skill="7-rest">Rest API</div>
+                    <div class="tag tag-outline" data-skill="8-leaflet">Leaflet API</div>
+                  </div>
+                </div>
+
+                <div class="card-wrap">
+                  <div class="tag-wrap">
+                    <div class="tag tag-cate" data-tag="2-project">프로젝트</div>
+                  </div>
+                  <div class="card-content">
+                    <div class="title">
+                      <h2>곶감</h2>
+                    </div>
+                    <div class="explanation">용인대학교 컴퓨터과학과 졸업작품으로 사람의 감정 또는 장소에 따라 현지인이 직접 추천하는 '곳곳의 감성'이라는 뜻을 가진 국내 여행지 추천 사이트입니다.</div>
+                  </div>
+                  <div class="tag-wrap">
+                    <div class="tag tag-outline" data-skill="2-vue">Vue.js</div>
+                    <div class="tag tag-outline" data-skill="3-node">Node.js</div>
+                    <div class="tag tag-outline" data-skill="4-mysql">MySQL</div>
+                  </div>
+                </div>
+
+                <div class="card-wrap">
+                  <div class="tag-wrap">
+                    <div class="tag tag-cate" data-tag="2-project">프로젝트</div>
+                  </div>
+                  <div class="card-content">
+                    <div class="title">
+                      <h2>카카오</h2>
+                    </div>
+                    <div class="explanation">카카오사의 홈페이지, 관리자 페이지와 쇼핑몰을 개발한 프로젝트입니다.</div>
+                  </div>
+                  <div class="tag-wrap">
+                    <div class="tag tag-outline" data-skill="1-vanilla">Vanilla JS</div>
+                    <div class="tag tag-outline" data-skill="10-java">Java</div>
+                    <div class="tag tag-outline" data-skill="11-sj">Servlet & JSP</div>
+                    <div class="tag tag-outline" data-skill="4-mysql">MySQL</div>
                   </div>
                 </div>
               </div>
             </article>
         </section>
     </main>
+
+    <!-- footer -->
     <section id="footer">
         <footer class="flex-container page-footer">
-          <div class="footer-content"></div>
+          <div class="footer-content">
+            Hello, world! I'm a Junior web Front-end developer.
+            I can handle HTML, CSS, SASS, JS, Vue.js and I'm very interested in interactive web development.
+          </div>
           <div class="footer-link">
-            <a href="https://www.instagram.com/h_yudang/">📷 미더덕 인스타</a>
+            <a href="https://www.instagram.com/h_yudang/" target="_blank">📷 미더덕 인스타</a>
           </div>
         </footer>
     </section>
 
+    <!-- modal -->
+    <div class="modal-dim">
+      <div class="modal-wrap">
+        <div class="modal-explanation">
+          <!-- modal-header -->
+          <div class="modal-header">
+            <div class="tag tag-cate" data-tag="1-work">업무</div>
+          </div>
+          <!-- modal-body -->
+          <div class="modal-body">
+            <div class="flex-container">
+              <div class="title">
+                <h2>온디맨드 타시오</h2>
+              </div>
+              <div class="explanation">
+                온디맨드 타시오 앱은 나의 첫 번째 회사에서 작업한 첫 번째 프로젝트입니다.
+                원하는 정류장을 선택하고 인원수에 따라 요금을 지불하면 자율주행 셔틀버스를 이용할 수 있습니다.
+                운행지역으로는 총 4개의 지역으로 군산, 대구, 세종, 상암이 있습니다.
+              </div>
+              <div class="tag-wrap">
+                <div class="tag tag-outline" data-skill="2-vue">Vue.js</div>
+                <div class="tag tag-outline" data-skill="6-firebase">Firebase</div>
+              </div>
+            </div>
+          </div>
+          <!-- modal-footer -->
+          <div class="modal-footer flex-container">
+            <div class="info-table">
+              <h4>Web</h4>
+              <div class="info-url">
+                <a href="https://play.google.com/store/apps/details?id=com.springcloud.tasio" target="_blank">https://play.google.com/store/apps/details?id=com.springcloud.tasio</a>
+              </div>
+            </div>
+            <div class="info-table">
+              <h4>Source Code</h4>
+              <div class="info-url">
+                <a href="https://github.com/HyunYuJin/tasio_pro" target="_blank">https://github.com/HyunYuJin/tasio_pro</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="side-img">
+          <div class="modal-img">
+            <img src="../images/project-2-1@2x.png" alt="타시오 이미지">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- script -->
     <script src="../js/main.js"></script>
 </body>
 
