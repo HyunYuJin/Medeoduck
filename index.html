@@ -2,24 +2,34 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hyeon YuJin</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./src/images/medeoduck01.ico">
-    <meta name="description"
-        content="Hello, world! I'm a web developer. I'm in charge of front-end development, and I'm very interested in interactive web development.">
-    <meta name="author" content="Hyeon YuJin">
-    <!-- Google meta -->
-    <meta itemprop="name" content="Hyeon YuJin">
-    <script src="./src/js/lazy.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hyeon YuJin</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./src/images/medeoduck01.ico">
+  <meta name="description"
+    content="Hello, world! I'm a web developer. I'm in charge of front-end development, and I'm very interested in interactive web development.">
+  <meta name="author" content="Hyeon YuJin">
+  <!-- Google meta -->
+  <meta itemprop="name" content="Hyeon YuJin">
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/ui-page.css">
+  <link rel="stylesheet" href="./src/css/ui.css">
+  <script src="./src/js/lazy.js"></script>
 </head>
 
 <body>
+  <!-- #progress-bar-con -->
+  <div id="progress-bar-con">
+    <div class="progress-bar"></div>
+  </div>
+  <!-- #progress-bar-con end -->
+
   <!-- #site-wrapper -->
   <div id="site-wrapper">
+    <!-- #site-header -->
     <header id="site-header">
-      <section class="header-banner">
+      <section class="header-banner component row">
         <a href="/" class="header-logo" title="Home">
           <div class="logo image"></div>
         </a>
@@ -31,11 +41,12 @@
           </p>
           <h1 class="site-title">
             <span class="site-logo">MEDEODUCK BLOG</span>
-            <span class="site-description">FRONTEND DEV YUJIN</span>
           </h1>
+          <h2 class="site-description">FRONTEND DEV YUJIN</h2>
         </a>
         <div class="header-location">
-          <a href="/contact" class="location">HYEON YU JIN</a>
+          <a href="/contact" class="location">HYEON</a>
+          <a href="/contact" class="location">YU JIN</a>
         </div>
       </section>
       <nav class="main-menu">
@@ -49,126 +60,167 @@
         </div>
       </nav>
     </header>
+    <!-- #site-header end -->
+
+    <!-- #site-inner -->
+    <div id="site-inner">
+      <div class="page-contents">
+        <section class="component row">
+          <div class="card">
+            <a href="/about">
+              <div class="component-header">
+                <h3 class="title">INTRODUCE ME</h3>
+                <p class="title-description">FRONTEND DEVELOPER
+                </p>
+              </div>
+              <div class="component-body">
+                <img src="" class="image">
+                <p>I am a developer who records trivial things preciously.
+                  I always work with the attitude and responsibility of learning.</p>
+              </div>
+              <div class="component-footer">
+                <div class="read-more">
+                  <span class="article-number">Read more</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card routine-table-card">
+            <div class="card-special-border">
+              <h3 class="title">ROUTINE</h3>
+              <br>
+              <img src="" class="image">
+              <br>
+              <div class="my-routine">
+                <div class="tabs">
+                  <div class="tab" data-for="daily">DAILY</div>
+                  <div class="tab" data-for="week">WEEK</div>
+                </div>
+                <div class="tab-content" data-target="daily">
+                  <div class="tab-content-table">
+                    <span class="hours">7:00am-8:00am</span>
+                    <span class="dots"></span>
+                    <span class="task">Jogging</span>
+                  </div>
+                  <div class="tab-content-table">
+                    <span class="hours">9:00am-11:00am</span>
+                    <span class="dots"></span>
+                    <span class="task">Take a shower & Eat lunch</span>
+                  </div>
+                  <div class="tab-content-table">
+                    <span class="hours">11:00am-4:30am</span>
+                    <span class="dots"></span>
+                    <span class="task">Study</span>
+                  </div>
+                </div>
+                <div class="tab-content" data-target="week">
+                  <div class="tab-content-table">
+                    <span class="date">Monday</span>
+                    <span class="dots"></span>
+                    <span class="task">Algorithum</span>
+                  </div>
+                  <div class="tab-content-table">
+                    <span class="date">Tuesday</span>
+                    <span class="dots"></span>
+                    <span class="task">Front-end</span>
+                  </div>
+                  <div class="tab-content-table">
+                    <span class="date">Wednesday</span>
+                    <span class="dots"></span>
+                    <span class="task">Create Blog</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="component row">
+          <div class="card contact-touch">
+            <div class="card-special-border">
+              <img src="" class="card-tumb image">
+              <h3 class="title">CONTACNTING</h3>
+              <div class="component row">
+                <div class="line">
+                  <h4 class="section-heading">GITHUB</h4>
+                  <p class="section-text">
+                    <a href="https://github.com/HyunYuJin">HyunYuJin</a>
+                  </p>
+                </div>
+                <div class="line">
+                  <h4 class="section-heading">INSTAGRAM</h4>
+                  <p class="section-text">
+                    <a href="https://www.instagram.com/h_yudang/">h_yudang</a>
+                  </p>
+                </div>
+                <div class="line">
+                  <h4 class="section-heading">EMAIL</h4>
+                  <p class="section-text">gusdbwls9772@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card article">
+            <div class="component-body">
+              <section class="card-main">
+                <div class="component-header">
+                  <h3 class="title">미더덕 소개</h3>
+                  <p class="title-description">미치도록 더 날고싶은 오리</p>
+                </div>
+                <div class="component-body">
+                  <p class="copy">
+                    <img src="./src/images/medeoduck02.png">
+                    The blue green waters off the south east coast of Australia glisten as the sun rises above the
+                    horizon. Up early and eager, local fishermen brave the choppy seas as they collect their daily
+                    yield. Dedicated to preservation, they work extra hard to follow environmentally sustainable fishing
+                    practices – including avoiding overfishing, staying clear of protected areas, releasing protected
+                    species, and using safe fishing gear. As they arrive back at the docks, the huge array of fresh
+                    seafood is put on ice and shipped directly to Sea Harvest’s door in Canberra. Oysters, prawns,
+                    mussels, calamari, lobster, snapper, and every seasonal fish available travels straight from sea to
+                    store, just for you.
+                  </p>
+                </div>
+              </section>
+            </div>
+
+          </div>
+        </section>
+        <section class="component row">
+          <div class="card">
+            <a href="#">
+              <div class="component-header">
+                <h3 class="title">타시오</h3>
+                <p class="title-description">자율주행 셔틀버스</p>
+              </div>
+              <div class="component-body">
+                <img class="lazy-load" data-src="./src/images/project-2-1@2x.png" alt="타시오 배너 이미지">
+                <p class="copy">
+                  타시오 앱은 자율주행 온디맨드 서비스를 제공하는 안드로이드 어플리케이션 입니다.
+                  사용자는 총 4개의 지역인 군산, 대구, 세종, 상암 중 원하는 서비스 지역을 선택할 수 있고 예약 인원수, 원하는 출발지와 도착지 정류장을 선택한 후 사용할 수 있습니다.
+                </p>
+              </div>
+              <div class="component-footer">
+
+              </div>
+            </a>
+          </div>
+          <div class="card"></div>
+          <div class="card"></div>
+        </section>
+      </div>
+    </div>
+    <!-- #site-inner end -->
+
+    <!-- #site-footer -->
+    <footer id="site-footer">
+      <div class="footer-items">
+        <div class="footer-item footer-copy">&copy; HYEON YU JIN, REPUBLIC OF KOREA</div>
+        <a href="/contact" class="footer-item footer-location">HYEON YU JIN</a>
+        <a href="https://github.com/HyunYuJin" target="_blank" class="footer-item footer-ed">MY GITHUB</a>
+      </div>
+    </footer>
+    <!-- #site-footer end -->
   </div>
   <!-- #site-wrapper end -->
-
-  <!-- #site-inner -->
-  <div id="site-inner">
-    <div class="page-contents">
-      <section class="component row">
-        <div class="card">
-          <a href="/about">
-            <div class="component-header">
-              <h3 class="title">INTRODUCE ME</h3>
-              <p class="title-description">FRONTEND DEVELOPER
-              </p>
-            </div>
-            <div class="component-body">
-              <img src="" class="image">
-              <p>I am a developer who records trivial things preciously.
-                I always work with the attitude and responsibility of learning.</p>
-            </div>
-            <div class="component-footer">
-              <div class="read-more">
-                <span class="article-number">Read more</span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="card routine-table-card">
-          <div class="card-special-border">
-            <h3 class="title">ROUTINE</h3>
-            <br>
-            <img src="" class="image">
-            <br>
-            <div class="my-routine">
-              <div class="tabs">
-                <div class="tab" data-for="daily">DAILY</div>
-                <div class="tab" data-for="week">WEEK</div>
-              </div>
-              <div class="tab-content" data-target="daily">
-                <div class="tab-content-table">
-                  <span class="hours">7:00am-8:00am</span>
-                  <span class="dots"></span>
-                  <span class="task">Jogging</span>
-                </div>
-                <div class="tab-content-table">
-                  <span class="hours">9:00am-11:00am</span>
-                  <span class="dots"></span>
-                  <span class="task">Take a shower & Eat lunch</span>
-                </div>
-                <div class="tab-content-table">
-                  <span class="hours">11:00am-4:30am</span>
-                  <span class="dots"></span>
-                  <span class="task">Study</span>
-                </div>
-              </div>
-              <div class="tab-content" data-target="week">
-                <div class="tab-content-table">
-                  <span class="date">Monday</span>
-                  <span class="dots"></span>
-                  <span class="task">Algorithum</span>
-                </div>
-                <div class="tab-content-table">
-                  <span class="date">Tuesday</span>
-                  <span class="dots"></span>
-                  <span class="task">Front-end</span>
-                </div>
-                <div class="tab-content-table">
-                  <span class="date">Wednesday</span>
-                  <span class="dots"></span>
-                  <span class="task">Create Blog</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="component row">
-        <div class="card contact-touch">
-          <div class="card-special-border">
-            <img src="" class="card-tumb image">
-            <h3 class="title">CONTACNTING</h3>
-            <div class="component row">
-              <div class="line">
-                <h4 class="section-heading">GITHUB</h4>
-                <p class="section-text">
-                  <a href="https://github.com/HyunYuJin">HyunYuJin</a>
-                </p>
-              </div>
-              <div class="line">
-                <h4 class="section-heading">INSTAGRAM</h4>
-                <p class="section-text">
-                  <a href="https://www.instagram.com/h_yudang/">h_yudang</a>
-                </p>
-              </div>
-              <div class="line">
-                <h4 class="section-heading">EMAIL</h4>
-                <p class="section-text">gusdbwls9772@gmail.com</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card article"></div>
-      </section>
-      <section class="component row">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-      </section>
-    </div>
-  </div>
-  <!-- #site-inner end -->
-
-  <!-- #site-footer -->
-  <footer id="site-footer">
-    <div class="footer-items">
-      <div class="footer-item footer-copy">&copy; HYEON YU JIN, REPUBLIC OF KOREA</div>
-      <a href="/contact" class="footer-item footer-location">HYEON YU JIN</a>
-      <a href="https://github.com/HyunYuJin" target="_blank" class="footer-item footer-ed">MY GITHUB</a>
-    </div>
-  </footer>
-  <!-- #site-footer end -->
 </body>
 
 </html>

@@ -57,19 +57,20 @@ img.loaded {
 	transition-timing-function: ease;
 }
 
-img.overSize {
-	object-fit: cover;
+.component {
+	display: flex;
+	flex-direction: column;
+	position: relative;
 }
 
-.select-input > input {
-  display: inline-block !important;
-  padding: 0 !important;
-  max-width: 100% !important;
-  height: none !important;
-  margin: 0 2px 0 0 !important;
-  text-indent: 0 !important;
-  border: 0 none !important;
-  background: none !important;
-  line-height: inherit !important;
-  box-shadow: none !important;
+.row {
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.image {
+    filter: brightness(90%) grayscale(100%) contrast(130%);
+    transition: filter .9s;
+    /* -webkit-user-drag: none;
+	user-drag: none; */
 }
