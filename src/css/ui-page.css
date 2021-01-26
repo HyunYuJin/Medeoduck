@@ -21,7 +21,7 @@ body {
 
 /* #site-header */
 #site-header, #site-inner {
-  box-shadow: 0 0 0 1px #7a6280, inset 0 0 0 1px #7a6280;
+  box-shadow: 0 0 0 1px #858086, inset 0 0 0 1px #858086;
 }
 
 .header-banner {
@@ -35,14 +35,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 0 1px #7a6280, inset 0 0 0 1px #7a6280;
-  padding: 2rem;
+  box-shadow: 0 0 0 1px #858086, inset 0 0 0 1px #858086;
+  padding: 1.5rem;
 }
 
 .header-logo .logo {
   width: 100%;
-  /* height: 100%; */
-  height: 80px;
+  height: 100%;
   margin: 0 auto;
   max-width: 600px;
   background-image: url(../images/medeoduck03.png);
@@ -54,7 +53,7 @@ body {
 .header-banner-main {
   flex: 8;
   flex-direction: column;
-  box-shadow: 0 0 0 1px #7a6280, inset 0 0 0 1px #7a6280;
+  box-shadow: 0 0 0 1px #858086, inset 0 0 0 1px #858086;
   display: block;
   justify-content: center;
   align-content: center;
@@ -81,6 +80,28 @@ body {
   margin: 0;
   width: 120px;
   text-align: center;
+}
+
+.main-menu ul.menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-menu ul.menu li {
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 0 0 1px #858086, inset 0 0 0 1px #858086;
+  position: relative;
+}
+
+.main-menu ul.menu li a {
+  display: block;
+  padding: 16px 20px;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
 }
 
 @media (min-width: 700px) {
