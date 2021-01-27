@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="./src/css/reset.css">
   <link rel="stylesheet" href="./src/css/ui-page.css">
   <link rel="stylesheet" href="./src/css/ui.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jua&family=Yusei+Magic&display=swap" rel="stylesheet">
   <script src="./src/js/lazy.js"></script>
 </head>
 
@@ -53,7 +54,7 @@
         <div class="main-menu-container">
           <ul id="menu-main-menu" class="menu">
             <li>
-              <a href="/about">
+              <a href="/about" class="card">
                 ABOUT
                 <!-- <span class="hover-indicator"></span> -->
               </a>
@@ -77,17 +78,17 @@
     <div id="site-inner">
       <div class="page-contents">
         <section class="component row">
-          <div class="card">
-            <a href="/about">
+            <a href="/about" class="card article-about article-preview article-card">
               <div class="component-header">
-                <h3 class="title">INTRODUCE ME</h3>
-                <p class="title-description">FRONTEND DEVELOPER
-                </p>
+                <h3 class="title title-masthead">INTRODUCE ME</h3>
+                <p class="title-description">FRONTEND DEVELOPER</p>
               </div>
               <div class="component-body">
                 <img src="" class="image">
-                <p>I am a developer who records trivial things preciously.
-                  I always work with the attitude and responsibility of learning.</p>
+                <p class="copy">
+                  I am a developer who records trivial things preciously.
+                  I always work with the attitude and responsibility of learning.
+                </p>
               </div>
               <div class="component-footer">
                 <div class="read-more">
@@ -95,33 +96,77 @@
                 </div>
               </div>
             </a>
-          </div>
-          <div class="card routine-table-card">
+          <div class="card article-routine routine-table-card">
             <div class="card-special-border">
-              <h3 class="title">ROUTINE</h3>
+              <h3 class="title routine-title">ROUTINE</h3>
               <br>
               <img src="" class="image">
               <br>
               <div class="my-routine">
                 <div class="tabs">
-                  <div class="tab" data-for="daily">DAILY</div>
+                  <div class="tab active" data-for="daily">DAILY</div>
                   <div class="tab" data-for="week">WEEK</div>
                 </div>
-                <div class="tab-content" data-target="daily">
+                <div class="tab-content active" data-target="daily">
                   <div class="tab-content-table">
-                    <span class="hours">7:00am-8:00am</span>
+                    <span class="hours">7:30am</span>
+                    <span class="dots"></span>
+                    <span class="task">Wake Up</span>
+                  </div>
+                  <div class="tab-content-table">
+                    <span class="hours">8:00am</span>
+                    <span class="dots"></span>
+                    <span class="task">Breakfast</span>
+                  </div>
+                  <div class="tab-content-table">
+                    <span class="hours">8:30am</span>
                     <span class="dots"></span>
                     <span class="task">Jogging</span>
                   </div>
                   <div class="tab-content-table">
-                    <span class="hours">9:00am-11:00am</span>
+                    <span class="hours">10:00am</span>
                     <span class="dots"></span>
-                    <span class="task">Take a shower & Eat lunch</span>
+                    <span class="task">Wash face</span>
                   </div>
                   <div class="tab-content-table">
-                    <span class="hours">11:00am-4:30am</span>
+                    <span class="hours">11:00am</span>
                     <span class="dots"></span>
                     <span class="task">Study</span>
+                  </div>
+                  <div class="tab-content-table">
+                    <span class="hours">12:30pm</span>
+                    <span class="dots"></span>
+                    <span class="task">Lunch</span>
+                  </div>
+                  <div class="tab-content-table">
+                    <span class="hours">13:30pm</span>
+                    <span class="dots"></span>
+                    <span class="task">Study</span>
+                  </div>
+                  <div class="tab-content-table">
+                    <span class="hours">17:00pm</span>
+                    <span class="dots"></span>
+                    <span class="task">Dinner</span>
+                  </div>
+                  <div class="tab-content-table">
+                    <span class="hours">18:00pm</span>
+                    <span class="dots"></span>
+                    <span class="task">Shower</span>
+                  </div>
+                  <div class="tab-content-table">
+                    <span class="hours">19:00pm</span>
+                    <span class="dots"></span>
+                    <span class="task">Rest</span>
+                  </div>
+                  <div class="tab-content-table">
+                    <span class="hours">20:00pm</span>
+                    <span class="dots"></span>
+                    <span class="task">Study</span>
+                  </div>
+                  <div class="tab-content-table">
+                    <span class="hours">12:30am</span>
+                    <span class="dots"></span>
+                    <span class="task">Sleep</span>
                   </div>
                 </div>
                 <div class="tab-content" data-target="week">
@@ -170,7 +215,7 @@
               </div>
             </div>
           </div>
-          <div class="card article">
+          <div class="card article article-ko">
             <div class="component-body">
               <section class="card-main">
                 <div class="component-header">
@@ -192,11 +237,10 @@
                 </div>
               </section>
             </div>
-
           </div>
         </section>
         <section class="component row">
-          <div class="card">
+          <div class="card article-ko">
             <a href="#">
               <div class="component-header">
                 <h3 class="title">타시오</h3>

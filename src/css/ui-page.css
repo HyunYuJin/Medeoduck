@@ -1,11 +1,20 @@
 @charset "UTF-8";
 
+a:hover {
+  color: #ab96b3;
+}
+
 body {
+  font-family: 'Yusei Magic', sans-serif;
   background: #fffcf9 url('../images/background_paper.jpg');
   background-size: 300px 300px;
   background-repeat: repeat;
   overflow-x: hidden;
   max-width: 100vw;
+}
+
+.article-ko {
+  font-family: 'Jua', sans-serif;
 }
 
 /* #site-wrapper */
@@ -20,7 +29,7 @@ body {
 }
 
 /* #site-header */
-#site-header, #site-inner {
+#site-header, #site-inner, #site-footer {
   box-shadow: 0 0 0 1px #858086, inset 0 0 0 1px #858086;
 }
 
@@ -36,7 +45,7 @@ body {
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 0 1px #858086, inset 0 0 0 1px #858086;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 .header-logo .logo {
@@ -44,9 +53,9 @@ body {
   height: 100%;
   margin: 0 auto;
   max-width: 600px;
-  background-image: url(../images/medeoduck03.png);
+  background-image: url(../images/logo.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
   background-position: 50%;
 }
 
@@ -104,8 +113,163 @@ body {
   position: relative;
 }
 
-@media (min-width: 700px) {
-  .site-title {
-    font-size: 2.5em;
-  }
+/* #site-inner */
+.article-preview {
+  padding: 2rem;
+  box-shadow: 0 0 0 1px #858086, inset 0 0 0 1px #858086;
+}
+
+.card {
+  box-shadow: 0 0 0 1px #858086, inset 0 0 0 1px #858086;
+  padding: 1.4rem;
+  font-weight: 400;
+}
+
+.article-about {
+  flex: 0 0 66.6%;
+}
+
+.article-routine {
+  flex: 0 0 33.4%;
+}
+
+.article-card .component-header {
+  margin-bottom: 26px;
+}
+
+.component-header, .component-footer {
+  flex: 0 1 auto;
+}
+
+.title {
+  text-transform: uppercase;
+  line-height: 0.9;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 3rem;
+  line-height: 0.85;
+}
+
+.title-masthead {
+  font-size: 3rem;
+  line-height: 0.75;
+}
+
+.title-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
+}
+
+.component-body {
+  flex: 1 0 0;
+  width: auto;
+  height: auto; 
+}
+
+.copy {
+  font-weight: 400;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.read-more {
+  text-align: right;
+}
+
+.article-number {
+  display: inline-block;
+}
+
+.routine-table-card {
+  width: 100%;
+  max-width: 100%;
+  float: left;
+  clear: both;
+}
+
+.card-special-border {
+  position: relative;
+  width: 100%;
+  border: 3px dotted;
+  padding: 1.4rem;
+  border-image: url(../images/outline.svg) 32 round;
+  float: left;
+  clear: both;
+}
+
+.routine-title {
+  margin-bottom: 8px;
+  max-width: 100%;
+  min-width: 100%;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.my-routine {
+  position: relative;
+}
+
+.my-routine .tabs {
+  display: flex;
+  width: 100%;
+  border: 2px solid #858086;
+  float: left;
+  clear: both;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.my-routine .tabs .tab {
+  width: 50%;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.my-routine .tabs .tab.active {
+  background: #ab96b3;
+  color: #FFFFFF;
+}
+
+.my-routine .tab-content {
+  display: none;
+  width: calc(100% + 30px);
+  max-height: 324px;
+  float: left;
+  clear: both;
+  position: relative;
+  padding: 0 15px;
+  margin-top: 10px;
+  margin-left: -15px;
+}
+
+.my-routine .tab-content.active {
+  display: block;
+}
+
+.tab-content-table {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tab-content-table span {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.tab-content-table span.dots {
+  flex-grow: 1;
+  border-bottom: 2px dotted #858086;
+  height: 1.25em;
+  margin: 0 4px;
 }
