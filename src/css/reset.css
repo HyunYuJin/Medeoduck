@@ -39,8 +39,9 @@ table {
 a {
 	color: inherit;
     text-decoration: none;
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects;
+	background-color: transparent;
+	transition: all 0.6s;
+	-webkit-text-decoration-skip: objects;
 }
 
 img.lazy-load {
@@ -70,7 +71,7 @@ img.loaded {
 
 .image {
     filter: brightness(90%) grayscale(100%) contrast(130%);
-    transition: filter .9s;
+    transition: filter 0.6s;
     /* -webkit-user-drag: none;
 	user-drag: none; */
 }
