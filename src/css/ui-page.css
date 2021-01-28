@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-a:hover {
-  color: #ab96b3;
+a:hover, .card:hover {
+  color: #e9ae37;
 }
 
 body {
@@ -266,7 +266,7 @@ body {
 }
 
 .my-routine .tabs .tab.active {
-  background: #ab96b3;
+  background: #e9ae37;
   color: #FFFFFF;
 }
 
@@ -378,10 +378,15 @@ body {
   margin-bottom: 10px;
 }
 
+.article-medeoduck .card-footer:hover .image {
+  filter: brightness(90%) grayscale(0%) contrast(130%);
+}
+
 .copy-card {
   columns: 2;
   column-gap: 2.28rem;
 }
+
 .article-medeoduck .component-body {
   flex: 0 0 70%;
 }

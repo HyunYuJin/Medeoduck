@@ -44,6 +44,10 @@ a {
 	-webkit-text-decoration-skip: objects;
 }
 
+.card {
+	transition: all 0.6s;
+}
+
 img.lazy-load {
 	opacity: 0;
 	transition-property: filter opacity;

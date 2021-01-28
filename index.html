@@ -239,7 +239,7 @@
               </section>
             </div>
             <div class="card-footer">
-              <img src="./src/images/medeoduck02.png" style="max-width: 280px;">
+              <img class="image" src="./src/images/medeoduck02.png" style="max-width: 280px;">
             </div>
           </div>
         </section>
@@ -248,13 +248,14 @@
             <a href="#">
               <div class="component-header">
                 <h3 class="title title-medium">타시오</h3>
-                <p class="title-description">자율주행 셔틀버스</p>
+                <p class="title-description">웹 프론트엔드 & 구글콘솔 배포</p>
               </div>
               <div class="component-body">
                 <img class="lazy-load image" data-src="./src/images/project-2-1@2x.png" alt="타시오 배너 이미지">
                 <p class="copy">
-                  타시오 앱은 자율주행 온디맨드 서비스를 제공하는 안드로이드 어플리케이션 입니다.
-                  사용자는 총 4개의 지역인 군산, 대구, 세종, 상암 중 원하는 서비스 지역을 선택할 수 있고 예약 인원수, 원하는 출발지와 도착지 정류장을 선택한 후 사용할 수 있습니다.
+                  온디맨드 서비스를 제공하는 타시오는 자율주행 셔틀을 호출할 수 있는 웹 앱 서비스입니다.
+                  해당 서비스 지역은 군산, 대구, 세종, 상암 총 4개의 지역으로 사용자는 선택한 지역에 따라 인원수 및 출발지, 도착지를 선택 후 결제를 진행하며 셔틀버스를 이용할 수 있는 서비스 입니다.
+                  결제 모듈은 아임포트의 KG 모빌리언스 사를 이용했으며 셔틀버스 호출 및 취소 기능은 Web Socket을 사용하여 구현하였습니다.
                 </p>
               </div>
               <div class="component-footer">
@@ -267,14 +268,15 @@
           <div class="card article-product article-card article-ko" style="margin-bottom: -7rem;">
             <a href="#">
               <div class="component-header">
-                <h3 class="title title-medium">타시오</h3>
-                <p class="title-description">자율주행 셔틀버스</p>
+                <h3 class="title title-medium">온리원 고군산 자율주행 셔틀</h3>
+                <p class="title-description">웹 프론트엔드 & 구글콘솔 배포</p>
               </div>
               <div class="component-body">
-                <img class="lazy-load image" data-src="./src/images/project-2-1@2x.png" alt="타시오 배너 이미지">
+                <img class="lazy-load image" data-src="./src/images/project-tri-2-1@2x.png" alt="타시오 배너 이미지">
                 <p class="copy">
-                  타시오 앱은 자율주행 온디맨드 서비스를 제공하는 안드로이드 어플리케이션 입니다.
-                  사용자는 총 4개의 지역인 군산, 대구, 세종, 상암 중 원하는 서비스 지역을 선택할 수 있고 예약 인원수, 원하는 출발지와 도착지 정류장을 선택한 후 사용할 수 있습니다.
+                  군산시와 함께 진행한 서비스로 서비스 명은 온리원 고군산 자율주행 셔틀입니다.
+                  이 프로젝트는 온스케줄 웹 앱 서비스로, 대부분의 기능은 타시오와 비슷하지만 결제 모듈을 제외하여 사용자가 무료로 서비스를 이용할 수 있습니다.
+                  또한 지도에서 정류장을 선택할 수 있도록 하여 사용자에게 더 편안한 UX를 제공할 수 있도록 추가 구현하였습니다.
                 </p>
               </div>
               <div class="component-footer">
@@ -287,14 +289,16 @@
           <div class="card article-product article-card article-ko">
             <a href="#">
               <div class="component-header">
-                <h3 class="title title-medium">타시오</h3>
-                <p class="title-description">자율주행 셔틀버스</p>
+                <h3 class="title title-medium">자율주행 무인우체국</h3>
+                <p class="title-description">웹 프론트엔드 & 구글콘솔 배포</p>
               </div>
               <div class="component-body">
-                <img class="lazy-load image" data-src="./src/images/project-2-1@2x.png" alt="타시오 배너 이미지">
+                <img class="lazy-load image" data-src="./src/images/project-waze-3-2@2x.png" alt="타시오 배너 이미지">
                 <p class="copy">
-                  타시오 앱은 자율주행 온디맨드 서비스를 제공하는 안드로이드 어플리케이션 입니다.
-                  사용자는 총 4개의 지역인 군산, 대구, 세종, 상암 중 원하는 서비스 지역을 선택할 수 있고 예약 인원수, 원하는 출발지와 도착지 정류장을 선택한 후 사용할 수 있습니다.
+                  우정사업본부와 함께 진행한 서비스로 서비스 명은 자율주행 무인우체국입니다.
+                  이 프로젝트도 마찬가지로 안드로이드 웹 앱을 기반으로 개발되었고 주요 기능은 택배 접수 및 수령 예약 서비스를 제공하는 것입니다.
+                  고려대학교 세종 캠퍼스에 돌아다니는 셔틀버스는 사용자가 원하는 정류장으로 택배를 신청하면 택배를 신청한 시간에 배송해주는 서비스를 제공합니다.
+                  도착 10분전과 배송 완료 후 5분 뒤 사용자에게 푸쉬 알림 기능을 제공하여 보다 정확한 서비스를 제공하도록 하였습니다.
                 </p>
               </div>
               <div class="component-footer">
