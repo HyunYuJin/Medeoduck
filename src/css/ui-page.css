@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 a:hover, .card:hover {
-  color: #e9ae37;
+  color: #e9a110;
 }
 
 body {
@@ -184,7 +184,7 @@ body {
 }
 
 .component-body .intro-me {
-  max-width: 500px;
+  max-width: 400px;
   width: 100%;
 }
 
@@ -280,7 +280,7 @@ body {
 }
 
 .my-routine .tabs .tab.active {
-  background: #e9ae37;
+  background: #e9a110;
   color: #FFFFFF;
 }
 
