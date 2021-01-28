@@ -60,6 +60,11 @@ body {
   background-position: 50%;
 }
 
+.date span {
+  padding: 0 5px;
+  font-size: 1.1rem;
+}
+
 .header-logo .image:hover {
   filter: brightness(90%) grayscale(0%) contrast(130%);
 }
@@ -179,10 +184,19 @@ body {
 }
 
 .component-body .intro-me {
-  display: block;
+  max-width: 500px;
   width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
+}
+
+.intro-body {
+  display: flex;
+  flex: 0 0 0;
+  flex-direction: row;
+}
+
+.intro-body > .copy {
+  padding: 2rem;
+  padding-top: 0;
 }
 
 .component-body .image:hover {
@@ -192,7 +206,7 @@ body {
 .copy {
   font-weight: 400;
   margin: 20px 0 0 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.7;
 }
 
