@@ -70,6 +70,7 @@ img.loaded {
 }
 
 .image {
+	width: 100%;
     filter: brightness(90%) grayscale(100%) contrast(130%);
     transition: filter 0.6s;
     /* -webkit-user-drag: none;

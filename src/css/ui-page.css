@@ -5,7 +5,7 @@ a:hover {
 }
 
 body {
-  font-family: 'Yusei Magic', sans-serif;
+  font-family: 'Acme', sans-serif;
   background: #fffcf9 url('../images/background_paper.jpg');
   background-size: 300px 300px;
   background-repeat: repeat;
@@ -14,7 +14,8 @@ body {
 }
 
 .article-ko {
-  font-family: 'Jua', sans-serif;
+  font-family: 'Do Hyeon', sans-serif;
+
 }
 
 /* #site-wrapper */
@@ -81,6 +82,7 @@ body {
   width: 100%;
   margin: 0;
   /* padding: 0 4vw; */
+  font-size: 4rem;
 }
 
 .header-location {
@@ -93,6 +95,7 @@ body {
   margin: 0;
   width: 120px;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .main-menu ul.menu {
@@ -115,6 +118,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   position: relative;
+  letter-spacing: 0.05rem;
 }
 
 /* #site-inner */
@@ -165,6 +169,7 @@ body {
   text-transform: uppercase;
   font-weight: 400;
   margin: 0;
+  letter-spacing: 0.05rem;
 }
 
 .component-body {
@@ -176,7 +181,7 @@ body {
 .component-body .intro-me {
   display: block;
   width: 100%;
-  max-width: 270px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -209,6 +214,7 @@ body {
 .card-special-border {
   position: relative;
   width: 100%;
+  height: 100%;
   border: 3px dotted;
   padding: 1.4rem;
   border-image: url(../images/outline.svg) 32 round;
@@ -222,6 +228,16 @@ body {
   min-width: 100%;
   font-size: 3rem;
   line-height: 1;
+}
+
+.card-special-border .image {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card-special-border .image:hover {
+  filter: brightness(90%) grayscale(0%) contrast(130%)
 }
 
 .my-routine {
@@ -242,10 +258,11 @@ body {
   width: 50%;
   text-transform: uppercase;
   font-size: 1.1rem;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1;
   cursor: pointer;
   padding: 10px;
+  letter-spacing: 0.07rem;
 }
 
 .my-routine .tabs .tab.active {
@@ -287,4 +304,171 @@ body {
   border-bottom: 2px dotted #858086;
   height: 1.25em;
   margin: 0 4px;
+}
+
+.contact-touch {
+  flex: 0 0 25%;
+  max-width: 25%;
+  width: 25%;
+  text-align: center;
+}
+
+.card-tumb {
+  margin-bottom: 1.4rem !important;
+}
+
+.contact-touch .card-special-border .title {
+    margin: 20px 0;
+}
+
+.contact-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-layout > img {
+  flex: 0 0 auto;
+}
+
+.contact-layout > .title {
+  flex: 0 0 10%;
+}
+.contact-layout > .cta-wrap {
+  flex: 1;
+  align-items: flex-end;
+}
+
+.cta {
+  flex: 0 0 100%;
+  max-width: 100%;
+  width: 100%;
+}
+
+.cta .line {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+.cta .line .section-heading {
+  font-size: 1.3rem;
+  line-height: 1.3;
+  font-weight: 600px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.cta .line .section-text {
+  font-size: 1.1rem;
+}
+
+.article-medeoduck {
+  flex: 0 0 75%;
+  display: flex;
+  flex-direction: row;
+}
+
+.article-medeoduck .card-main {
+  position: relative;
+  height: 100%;
+}
+
+.article-medeoduck .component-header {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.copy-card {
+  columns: 2;
+  column-gap: 2.28rem;
+}
+.article-medeoduck .component-body {
+  flex: 0 0 70%;
+}
+
+.article-medeoduck .card-footer {
+  flex: 0 0 30%;
+}
+
+.row-extend-bottom {
+  padding-bottom: 7rem;
+}
+
+.article-product {
+  flex: 0 0 33.33333333%;
+  max-width: 33.33333333%;
+  width: 33.33333333%;
+}   
+
+.article-product a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.title-medium {
+  font-size: 3rem;
+  line-height: 0.85;
+}
+
+.logo-floating-img {
+  width: 33.33333333%;
+  height: 7rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  background-color: #FFFFFF;
+  background-image: url(../images/footer_medeoduck.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+}
+
+.logo-floating-img:hover {
+  filter: brightness(90%) grayscale(0%) contrast(130%);
+}
+
+.logo-floating {
+  width: 33.33333333%;
+  height: 7rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  display: flex;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+/* #site-footer */
+.footer-items {
+  display: flex;
+}
+
+.footer-items .footer-item {
+  box-shadow: 0 0 0 1px #858086, inset 0 0 0 1px #858086;
+  text-align: center;
+  display: block;
+  padding: 15px 20px;
+}  
+
+.footer-items .footer-copy {
+  flex: 0 0 40%;
+  max-width: 40%;
+  width: 40%;
+}
+
+.footer-items  .footer-location {
+  flex: 0 0 34%;
+  max-width: 34%;
+  width: 34%;
+}
+
+.footer-items  .footer-ed {
+  flex: 0 0 26%;
+  max-width: 26%;
+  width: 26%;
 }

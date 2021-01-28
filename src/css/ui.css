@@ -4,7 +4,7 @@
     left: 0;
     top: 0;
     width: 100vw;
-    height: 5px;
+    height: 7px;
     background: #555555;
     z-index: 1;
 }
@@ -12,5 +12,22 @@
 .progress-bar {
     width: 0%;
     height: 100%;
-    background: rgb(159, 109, 182);
+    background: #ab96b3;
+}
+
+@media screen and (min-width: 700px) {
+    .title {
+        font-size: 4rem;
+        line-height: 1;
+    }
+
+    .title-description {
+        font-size: 1.14rem;
+        line-height: 1.5;
+    }
+
+    .title-medium {
+        font-size: 4rem;
+        line-height: 1;
+    }
 }
